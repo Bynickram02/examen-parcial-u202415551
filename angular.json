@@ -3,7 +3,7 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "faa3201a-5714-47d5-b47f-f34f1d8b180a"
+    "analytics": "849da484-adeb-4fbc-a0be-493035e0441f"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -67,10 +67,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "examen-parcial-u202415551:build:production"
+              "buildTarget": "learning-center-master:build:production"
             },
             "development": {
-              "buildTarget": "examen-parcial-u202415551:build:development"
+              "buildTarget": "learning-center-master:build:development"
             }
           },
           "defaultConfiguration": "development"
