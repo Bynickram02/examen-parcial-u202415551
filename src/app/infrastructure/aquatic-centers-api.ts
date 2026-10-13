@@ -8,7 +8,8 @@ import {AquaticCentersApiEndpoint} from './aquatic-centers-api-endpoint';
 import {ReservationsApiEndpoint} from './reservations-api-endpoint';
 
 /**
- * @author Nickolas Ramirez
+ *aquatic-centers-api
+ @author Nickolas Ramirez
  */
 @Service()
 export class AquaticCentersApi extends BaseApi {

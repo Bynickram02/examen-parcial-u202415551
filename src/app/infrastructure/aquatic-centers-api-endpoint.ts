@@ -6,7 +6,8 @@ import {AquaticCenterAssembler} from './aquatic-center-assembler';
 import {environment} from '../../../environments/environment';
 
 /**
- * @author Nickolas Ramirez
+ * aquatic-center-api-endpoint (profe toy tipeando los comentarios porsiacaso ah, nada de ia, son solo de referencia)
+@author Nickolas Ramirez
  */
 export class AquaticCentersApiEndpoint extends BaseApiEndpoint<AquaticCenter, AquaticCenterResource, AquaticCentersResponse, AquaticCenterAssembler> {
   constructor(http: HttpClient) {

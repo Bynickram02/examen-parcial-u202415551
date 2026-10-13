@@ -4,7 +4,8 @@ import {ActivityType} from '../domain/model/activity-type';
 import {AquaticCenterResource, AquaticCentersResponse} from './aquatic-centers-response';
 
 /**
- * @author Nickolas Ramirez
+ * aquatic-center-assembler
+ @author Nickolas Ramirez
  */
 export class AquaticCenterAssembler implements BaseAssembler<AquaticCenter, AquaticCenterResource, AquaticCentersResponse> {
   toEntitiesFromResponse = (response: AquaticCentersResponse): AquaticCenter[] =>

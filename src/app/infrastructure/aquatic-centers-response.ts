@@ -1,7 +1,8 @@
 import {BaseResource, BaseResponse} from '../../shared/infrastructure/base-response';
 
 /**
- * @author Nickolas Ramirez
+ * aquatic-centers-response
+  @author Nickolas Ramirez
  */
 export interface AquaticCenterResource extends BaseResource {
   id: number;
