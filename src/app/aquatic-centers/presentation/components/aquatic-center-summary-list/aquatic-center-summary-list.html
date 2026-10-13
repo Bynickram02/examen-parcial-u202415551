@@ -1,0 +1,13 @@
+@if (store.loading()) {
+  <mat-progress-spinner mode="indeterminate" diameter="40" [attr.aria-label]="'home.loading' | translate"/>
+}
+@if (store.error()) {
+  <mat-error role="alert">{{ 'home.load-error' | translate }}</mat-error>
+}
+<mat-grid-list [cols]="columns()" rowHeight="380px" gutterSize="16px">
+  @for (aquaticCenter of store.aquaticCenters(); track aquaticCenter.id) {
+    <mat-grid-tile>
+      <app-aquatic-center-summary [aquaticCenter]="aquaticCenter" [reservations]="store.reservations()"/>
+    </mat-grid-tile>
+  }
+</mat-grid-list>

@@ -1,0 +1,37 @@
+<mat-card class="summary-card" appearance="outlined" role="region" [attr.aria-labelledby]="'center-title-' + aquaticCenter().id">
+  <mat-card-header>
+    <mat-icon mat-card-avatar class="avatar" aria-hidden="true">pool</mat-icon>
+    <mat-card-title [id]="'center-title-' + aquaticCenter().id">{{ aquaticCenter().name }}</mat-card-title>
+    <mat-card-subtitle>{{ 'activity-types.' + aquaticCenter().activityType | translate }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="summary-content">
+    @if (centerReservations().length) {
+      <mat-list [attr.aria-label]="'summary.reservations' | translate">
+        @for (reservation of centerReservations(); track reservation.id) {
+          <mat-list-item>
+            <span matListItemTitle>{{ reservation.participantName }}</span>
+            <span matListItemLine>{{ reservation.reservedAt | date: 'short' }}</span>
+            <span matListItemMeta class="participants"
+                  [attr.aria-label]="('summary.participants' | translate) + ': ' + reservation.participants">
+              {{ reservation.participants }}
+            </span>
+          </mat-list-item>
+        }
+      </mat-list>
+    } @else {
+      <p class="empty">{{ 'summary.empty' | translate }}</p>
+    }
+  </mat-card-content>
+
+  <mat-card-footer class="indicators">
+    <div class="indicator">
+      <span class="label">{{ 'summary.total-participants' | translate }}</span>
+      <strong>{{ totalParticipants() }}</strong>
+    </div>
+    <div class="indicator">
+      <span class="label">{{ 'summary.available-capacity' | translate }}</span>
+      <strong>{{ availableCapacity() }} / {{ aquaticCenter().capacity }}</strong>
+    </div>
+  </mat-card-footer>
+</mat-card>
