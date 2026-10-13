@@ -1,0 +1,65 @@
+{
+  "aquatic-centers": [
+    {
+      "id": 1,
+      "name": "AquaLife Miraflores Swimming Center",
+      "activityType": "swimming",
+      "capacity": 28,
+      "latitude": -12.1211,
+      "longitude": -77.0306
+    },
+    {
+      "id": 2,
+      "name": "AquaLife San Borja Diving Center",
+      "activityType": "diving",
+      "capacity": 16,
+      "latitude": -12.1087,
+      "longitude": -76.9987
+    },
+    {
+      "id": 3,
+      "name": "AquaLife Barranco Aqua Fitness Center",
+      "activityType": "aqua-fitness",
+      "capacity": 24,
+      "latitude": -12.1495,
+      "longitude": -77.0217
+    },
+    {
+      "id": 4,
+      "name": "AquaLife Chorrillos Water Polo Center",
+      "activityType": "water-polo",
+      "capacity": 20,
+      "latitude": -12.1745,
+      "longitude": -77.0247
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "aquaticCenterId": 1,
+      "activityType": "swimming",
+      "participantName": "Ana Torres",
+      "participants": 6,
+      "weatherTemperature": 21.2,
+      "reservedAt": "2026-10-12T09:15:00"
+    },
+    {
+      "id": 2,
+      "aquaticCenterId": 3,
+      "activityType": "aqua-fitness",
+      "participantName": "Luis Medina",
+      "participants": 5,
+      "weatherTemperature": 20.8,
+      "reservedAt": "2026-10-12T10:00:00"
+    },
+    {
+      "id": 3,
+      "aquaticCenterId": 1,
+      "activityType": "swimming",
+      "participantName": "Carla Rojas",
+      "participants": 4,
+      "weatherTemperature": 22.1,
+      "reservedAt": "2026-10-12T11:30:00"
+    }
+  ]
+}

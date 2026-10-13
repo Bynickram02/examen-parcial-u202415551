@@ -1,0 +1,64 @@
+{
+  "toolbar": {
+    "title": "Plataforma de Gestión de Centros Acuáticos AquaLife",
+    "toggle-menu": "Mostrar u ocultar menú de navegación",
+    "language": "Seleccionar idioma"
+  },
+  "navigation": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "new-reservation": "Nueva Reserva"
+  },
+  "home": {
+    "title": "Inicio",
+    "content": "Reservas Inteligentes y Gestión de Capacidad para Centros Acuáticos.",
+    "my-aquatic-centers": "Mis Centros Acuáticos",
+    "loading": "Cargando centros acuáticos",
+    "load-error": "No se pudieron cargar los centros acuáticos. Verifique que el servidor esté en ejecución."
+  },
+  "summary": {
+    "reservations": "Reservas",
+    "participants": "Participantes",
+    "empty": "Vacío",
+    "total-participants": "Total de Participantes",
+    "available-capacity": "Capacidad Disponible"
+  },
+  "activity-types": {
+    "swimming": "Natación",
+    "diving": "Buceo",
+    "aqua-fitness": "Gimnasia Acuática",
+    "water-polo": "Waterpolo"
+  },
+  "reservation-form": {
+    "title": "Nueva Reserva",
+    "subtitle": "Registre Participantes en su Centro Acuático",
+    "activity-type": "Tipo de actividad",
+    "participant-name": "Nombre del participante",
+    "participants": "Participantes",
+    "available-capacity": "Capacidad disponible: {{value}}",
+    "create": "Crear",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "errors": {
+      "activity-type-required": "El tipo de actividad es obligatorio.",
+      "participant-name-required": "El nombre del participante es obligatorio y no puede contener solo espacios.",
+      "participants-min": "Los participantes deben ser mayores que cero.",
+      "participants-max": "Los participantes no pueden superar la capacidad disponible ({{value}}).",
+      "participants-integer": "Los participantes deben ser un número entero.",
+      "capacity-exceeded": "No hay capacidad disponible suficiente para esta reserva.",
+      "save-failed": "No se pudo guardar la reserva. Inténtelo nuevamente."
+    }
+  },
+  "weather": {
+    "select-activity": "Seleccione una actividad para ver la temperatura actual.",
+    "loading": "Obteniendo temperatura actual...",
+    "current-temperature": "Temperatura actual",
+    "error": "No se pudo obtener la temperatura. No es posible crear la reserva.",
+    "retry": "Reintentar"
+  },
+  "page-not-found": {
+    "title": "Página No Encontrada",
+    "message": "La ruta {{path}} no fue encontrada.",
+    "go-home": "Ir a Inicio"
+  }
+}

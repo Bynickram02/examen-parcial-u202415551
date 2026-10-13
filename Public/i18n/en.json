@@ -1,0 +1,64 @@
+{
+  "toolbar": {
+    "title": "AquaLife Aquatic Center Management Platform",
+    "toggle-menu": "Toggle navigation menu",
+    "language": "Select language"
+  },
+  "navigation": {
+    "label": "Main navigation",
+    "home": "Home",
+    "new-reservation": "New Reservation"
+  },
+  "home": {
+    "title": "Home",
+    "content": "Smart Reservations and Capacity Management for Aquatic Centers.",
+    "my-aquatic-centers": "My Aquatic Centers",
+    "loading": "Loading aquatic centers",
+    "load-error": "Aquatic centers could not be loaded. Please check that the server is running."
+  },
+  "summary": {
+    "reservations": "Reservations",
+    "participants": "Participants",
+    "empty": "Empty",
+    "total-participants": "Total Participants",
+    "available-capacity": "Available Capacity"
+  },
+  "activity-types": {
+    "swimming": "Swimming",
+    "diving": "Diving",
+    "aqua-fitness": "Aqua Fitness",
+    "water-polo": "Water Polo"
+  },
+  "reservation-form": {
+    "title": "New Reservation",
+    "subtitle": "Register Participants at Your Aquatic Center",
+    "activity-type": "Activity type",
+    "participant-name": "Participant name",
+    "participants": "Participants",
+    "available-capacity": "Available capacity: {{value}}",
+    "create": "Create",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "errors": {
+      "activity-type-required": "Activity type is required.",
+      "participant-name-required": "Participant name is required and cannot contain only spaces.",
+      "participants-min": "Participants must be greater than zero.",
+      "participants-max": "Participants cannot exceed the available capacity ({{value}}).",
+      "participants-integer": "Participants must be a whole number.",
+      "capacity-exceeded": "There is not enough available capacity for this reservation.",
+      "save-failed": "The reservation could not be saved. Please try again."
+    }
+  },
+  "weather": {
+    "select-activity": "Select an activity to see the current temperature.",
+    "loading": "Getting current temperature...",
+    "current-temperature": "Current temperature",
+    "error": "The temperature could not be obtained. The reservation cannot be created.",
+    "retry": "Retry"
+  },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "message": "The path {{path}} was not found.",
+    "go-home": "Go to Home"
+  }
+}
