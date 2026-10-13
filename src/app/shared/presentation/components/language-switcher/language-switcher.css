@@ -1,0 +1,8 @@
+mat-button-toggle-group {
+  --mat-button-toggle-height: 36px;
+  --mat-button-toggle-text-color: var(--mat-sys-on-primary);
+  --mat-button-toggle-selected-state-background-color: var(--mat-sys-on-primary);
+  --mat-button-toggle-selected-state-text-color: var(--mat-sys-primary);
+  --mat-button-toggle-divider-color: var(--mat-sys-on-primary);
+  border-color: var(--mat-sys-on-primary);
+}
