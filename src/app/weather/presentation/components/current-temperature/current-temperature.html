@@ -1,0 +1,19 @@
+<div class="current-temperature" role="status" aria-live="polite">
+  @if (store.loading()) {
+    <mat-progress-spinner mode="indeterminate" diameter="22" aria-hidden="true"/>
+    <span>{{ 'weather.loading' | translate }}</span>
+  } @else if (store.error()) {
+    <mat-icon class="error" aria-hidden="true">cloud_off</mat-icon>
+    <span class="error" role="alert">{{ 'weather.error' | translate }}</span>
+    <button mat-button type="button" (click)="retry.emit()">{{ 'weather.retry' | translate }}</button>
+  } @else if (store.currentWeather()) {
+    <mat-icon aria-hidden="true">thermostat</mat-icon>
+    <span>
+      {{ 'weather.current-temperature' | translate }}:
+      <strong>{{ store.currentWeather()?.temperature | number: '1.1-1' }} {{ store.currentWeather()?.temperatureUnit }}</strong>
+    </span>
+  } @else {
+    <mat-icon aria-hidden="true">wb_sunny</mat-icon>
+    <span>{{ 'weather.select-activity' | translate }}</span>
+  }
+</div>
