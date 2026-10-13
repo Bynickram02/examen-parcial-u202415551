@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Montserrat, Roboto, sans-serif;
+}
+
+.page-title {
+  margin: 0 0 4px;
+  font: var(--mat-sys-headline-medium);
+  font-family: Montserrat, Roboto, sans-serif;
+  color: var(--mat-sys-primary);
+}
+
+.page-subtitle {
+  margin: 0 0 24px;
+  color: var(--mat-sys-on-surface-variant);
+}
