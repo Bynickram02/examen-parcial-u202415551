@@ -66,10 +66,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "learning-center-master:build:production"
+              "buildTarget": "examen-parcial-u202415551:build:production"
             },
             "development": {
-              "buildTarget": "learning-center-master:build:development"
+              "buildTarget": "examen-parcial-u202415551:build:development"
             }
           },
           "defaultConfiguration": "development"
